@@ -1,0 +1,20 @@
+services:
+  jekyll:
+    build: .
+    container_name: github-site
+    volumes:
+      - .:/srv/jekyll # Mount the current directory to the container
+    ports:
+      - "4000:4000" # Map port 4000 of the host to port 4000 of the container
+    user: "1000:1000"
+    command: jekyll serve --host 0.0.0.0 --watch --force_polling --drafts
+
+  browsersync:
+    image: ustwo/browser-sync
+    container_name: browsersync
+    command: start --proxy "http://jekyll:4000" --files "/srv/jekyll/_site/**/*" --no-open
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "3000:3000" # Make BrowserSync available on port 3000
+      - "3001:3001" # BrowserSync UI
