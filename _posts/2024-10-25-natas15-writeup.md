@@ -2,15 +2,17 @@
 layout: post
 title: Natas15 Writeup
 categories:
-- CTF writeups
-- natas
+  - CTF writeups
+  - natas
 tags:
-- beginner
-- sqli
-- script
-description: First writeup! On OverTheWire Natas Wargame 15
+  - beginner
+  - sqli
+  - python
+  - script
+description: First Writeup! On OverTheWire Natas Wargame 15
 date: 2024-10-25 22:49 -0400
 ---
+
 ### First Glance
 
 Looking at the source code:
