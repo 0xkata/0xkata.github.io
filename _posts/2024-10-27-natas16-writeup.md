@@ -2,16 +2,17 @@
 layout: post
 title: Natas16 Writeup
 categories:
-- CTF writeups
-- natas
+  - CTF writeups
+  - natas
 tags:
-- beginner
-- command injection
-- python
-- script
+  - beginner
+  - command injection
+  - python
+  - script
 description: Weird Grep Command Injection
 date: 2024-10-27 12:40 -0400
 ---
+
 ### Source Code Analysis
 
 ```php
