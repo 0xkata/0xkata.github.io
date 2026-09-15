@@ -36,4 +36,3 @@ RUN bundle
 
 # Copy the rest of your site files
 COPY . .
-
