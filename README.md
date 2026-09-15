@@ -34,8 +34,8 @@ Start the site with live reload:
 ./bin/dev
 ```
 
-Open <http://127.0.0.1:4000>. Local edits rebuild automatically and do not
-require a push.
+Open <http://127.0.0.1:4000>. The script builds frontend assets before starting
+Jekyll. Local edits rebuild automatically and do not require a push.
 
 ## Features
 

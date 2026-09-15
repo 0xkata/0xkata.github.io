@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+npm run build
+
 if command -v mise >/dev/null 2>&1; then
   exec mise x ruby@3.4 -- bundle exec jekyll serve --livereload --host 127.0.0.1 "$@"
 fi
