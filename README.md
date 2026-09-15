@@ -18,6 +18,25 @@
 
 </div>
 
+## Local development
+
+Install the dependencies once:
+
+```console
+npm install
+mise install ruby@3.4
+mise x ruby@3.4 -- bundle install
+```
+
+Start the site with live reload:
+
+```console
+./bin/dev
+```
+
+Open <http://127.0.0.1:4000>. Local edits rebuild automatically and do not
+require a push.
+
 ## Features
 
 - **Design & UX** - Responsive layout, Dark/Light modes, Localized UI language,

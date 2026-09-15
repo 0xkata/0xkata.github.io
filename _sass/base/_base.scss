@@ -5,6 +5,7 @@
 @use '../abstracts/placeholders';
 @use '../themes/light';
 @use '../themes/dark';
+@use '../themes/catppuccin';
 
 $enable-dual: not list.index(v.$theme-options, v.$theme);
 $enable-light: v.$theme == light or $enable-dual;
@@ -13,12 +14,14 @@ $enable-dark: v.$theme == dark or $enable-dual;
 @if $enable-light {
   :root[#{v.$theme-attr}='light'] {
     @include light.styles;
+    @include catppuccin.latte;
   }
 }
 
 @if $enable-dark {
   :root[#{v.$theme-attr}='dark'] {
     @include dark.styles;
+    @include catppuccin.mocha;
   }
 }
 
@@ -26,10 +29,12 @@ $enable-dark: v.$theme == dark or $enable-dual;
   :root:not([#{v.$theme-attr}]) {
     @include mx.color-scheme(light) {
       @include light.styles;
+      @include catppuccin.latte;
     }
 
     @include mx.color-scheme(dark) {
       @include dark.styles;
+      @include catppuccin.mocha;
     }
   }
 }

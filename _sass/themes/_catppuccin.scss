@@ -1,0 +1,200 @@
+@mixin shared {
+  --main-bg: var(--ctp-base);
+  --mask-bg: color-mix(in srgb, var(--ctp-crust) 72%, transparent);
+  --main-border-color: var(--ctp-surface-0);
+  --text-color: var(--ctp-text);
+  --text-muted-color: var(--ctp-subtext-0);
+  --text-muted-highlight-color: var(--ctp-subtext-1);
+  --heading-color: var(--ctp-text);
+  --label-color: var(--ctp-subtext-1);
+  --blockquote-border-color: var(--ctp-surface-1);
+  --blockquote-text-color: var(--ctp-subtext-0);
+  --link-color: var(--ctp-link);
+  --link-underline-color: color-mix(in srgb, var(--ctp-link) 35%, transparent);
+  --button-bg: var(--ctp-mantle);
+  --btn-border-color: var(--ctp-surface-0);
+  --btn-backtotop-color: var(--ctp-text);
+  --btn-backtotop-border-color: var(--ctp-surface-0);
+  --card-header-bg: var(--ctp-mantle);
+  --checkbox-color: var(--ctp-overlay-0);
+  --checkbox-checked-color: var(--ctp-green);
+  --img-bg: radial-gradient(circle, var(--ctp-mantle), var(--ctp-crust));
+  --shimmer-bg: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--ctp-overlay-0) 24%, transparent),
+    transparent
+  );
+  --menu-bg: var(--ctp-mantle);
+  --menu-border-color: var(--ctp-surface-0);
+  --menu-shadow-color: color-mix(in srgb, var(--ctp-crust) 42%, transparent);
+  --menu-active-color: var(--ctp-text);
+  --menu-highlight-bg: color-mix(in srgb, var(--ctp-surface-0) 62%, transparent);
+  --site-title-color: var(--ctp-text);
+  --site-subtitle-color: var(--ctp-subtext-0);
+  --sidebar-bg: var(--ctp-mantle);
+  --sidebar-border-color: var(--ctp-surface-0);
+  --sidebar-muted-color: var(--ctp-subtext-0);
+  --sidebar-active-color: var(--ctp-mauve);
+  --sidebar-hover-bg: var(--ctp-surface-0);
+  --sidebar-btn-bg: var(--ctp-surface-0);
+  --sidebar-btn-color: var(--ctp-subtext-1);
+  --avatar-border-color: var(--ctp-lavender);
+  --topbar-bg: color-mix(in srgb, var(--ctp-base) 82%, transparent);
+  --topbar-text-color: var(--ctp-text);
+  --search-border-color: var(--ctp-surface-0);
+  --search-icon-color: var(--ctp-overlay-1);
+  --input-focus-border-color: var(--ctp-lavender);
+  --post-list-text-color: var(--ctp-text);
+  --btn-patinator-text-color: var(--ctp-text);
+  --btn-paginator-hover-color: var(--ctp-surface-0);
+  --toc-highlight: var(--ctp-mauve);
+  --toc-popup-border-color: var(--ctp-surface-1);
+  --tag-hover: var(--ctp-surface-0);
+  --tb-odd-bg: var(--ctp-mantle);
+  --tb-even-bg: var(--ctp-base);
+  --tb-border-color: var(--ctp-surface-0);
+  --footnote-target-bg: color-mix(in srgb, var(--ctp-yellow) 28%, transparent);
+  --btn-share-color: var(--ctp-overlay-1);
+  --btn-share-hover-color: var(--ctp-blue);
+  --card-bg: var(--ctp-mantle);
+  --card-hover-bg: var(--ctp-surface-0);
+  --card-shadow: color-mix(in srgb, var(--ctp-crust) 38%, transparent) 0 6px 18px;
+  --kbd-wrap-color: var(--ctp-surface-2);
+  --kbd-text-color: var(--ctp-text);
+  --kbd-bg-color: var(--ctp-mantle);
+  --prompt-text-color: var(--ctp-text);
+  --prompt-tip-bg: color-mix(in srgb, var(--ctp-green) 18%, transparent);
+  --prompt-tip-icon-color: var(--ctp-green);
+  --prompt-info-bg: color-mix(in srgb, var(--ctp-blue) 18%, transparent);
+  --prompt-info-icon-color: var(--ctp-blue);
+  --prompt-warning-bg: color-mix(in srgb, var(--ctp-yellow) 20%, transparent);
+  --prompt-warning-icon-color: var(--ctp-yellow);
+  --prompt-danger-bg: color-mix(in srgb, var(--ctp-red) 18%, transparent);
+  --prompt-danger-icon-color: var(--ctp-red);
+  --tag-border: var(--ctp-surface-1);
+  --tag-shadow: var(--ctp-surface-0);
+  --dash-color: var(--ctp-surface-1);
+  --search-tag-bg: var(--ctp-mantle);
+  --categories-border: color-mix(in srgb, var(--ctp-overlay-0) 36%, transparent);
+  --categories-hover-bg: var(--ctp-surface-0);
+  --categories-icon-hover-color: var(--ctp-mauve);
+  --timeline-node-bg: var(--ctp-lavender);
+  --timeline-color: var(--ctp-surface-1);
+  --timeline-year-dot-color: var(--ctp-mauve);
+  --language-border-color: var(--ctp-surface-0);
+  --highlight-bg-color: var(--ctp-crust);
+  --highlighter-rouge-color: var(--ctp-maroon);
+  --highlight-lineno-color: var(--ctp-overlay-0);
+  --inline-code-bg: color-mix(in srgb, var(--ctp-mauve) 10%, transparent);
+  --code-color: var(--ctp-text);
+  --code-header-text-color: var(--ctp-subtext-0);
+  --code-header-muted-color: var(--ctp-surface-1);
+  --code-header-icon-color: var(--ctp-overlay-0);
+  --clipboard-checked-color: var(--ctp-green);
+  --filepath-text-color: var(--ctp-subtext-1);
+
+  .highlight,
+  .highlight .w {
+    color: var(--ctp-text);
+    background-color: var(--ctp-crust);
+  }
+
+  .highlight :is(.c, .ch, .cd, .cm, .cpf, .c1, .cs) {
+    color: var(--ctp-overlay-1);
+  }
+
+  .highlight :is(.k, .kd, .kn, .kp, .kr, .kt, .kv) {
+    color: var(--ctp-mauve);
+  }
+
+  .highlight :is(.s, .sa, .sb, .sc, .dl, .sd, .s2, .sh, .sx, .s1, .ss) {
+    color: var(--ctp-green);
+  }
+
+  .highlight :is(.m, .mb, .mf, .mh, .mi, .il, .mo) {
+    color: var(--ctp-peach);
+  }
+
+  .highlight :is(.na, .nc, .nd, .ne, .nf, .fm) {
+    color: var(--ctp-blue);
+  }
+
+  .highlight :is(.nb, .bp, .no, .nt) {
+    color: var(--ctp-yellow);
+  }
+
+  .highlight :is(.o, .ow, .p, .pi) {
+    color: var(--ctp-sky);
+  }
+
+  .highlight :is(.err, .gr, .gd) {
+    color: var(--ctp-red);
+  }
+
+  .highlight :is(.gi, .go) {
+    color: var(--ctp-green);
+  }
+}
+
+@mixin latte {
+  --ctp-rosewater: #dc8a78;
+  --ctp-flamingo: #dd7878;
+  --ctp-pink: #ea76cb;
+  --ctp-mauve: #8839ef;
+  --ctp-red: #d20f39;
+  --ctp-maroon: #e64553;
+  --ctp-peach: #fe640b;
+  --ctp-yellow: #df8e1d;
+  --ctp-green: #40a02b;
+  --ctp-teal: #179299;
+  --ctp-sky: #04a5e5;
+  --ctp-sapphire: #209fb5;
+  --ctp-blue: #1e66f5;
+  --ctp-lavender: #7287fd;
+  --ctp-text: #4c4f69;
+  --ctp-subtext-1: #5c5f77;
+  --ctp-subtext-0: #6c6f85;
+  --ctp-overlay-1: #8c8fa1;
+  --ctp-overlay-0: #9ca0b0;
+  --ctp-surface-2: #acb0be;
+  --ctp-surface-1: #bcc0cc;
+  --ctp-surface-0: #ccd0da;
+  --ctp-base: #eff1f5;
+  --ctp-mantle: #e6e9ef;
+  --ctp-crust: #dce0e8;
+  --ctp-link: color-mix(in srgb, var(--ctp-blue) 90%, var(--ctp-text));
+
+  @include shared;
+}
+
+@mixin mocha {
+  --ctp-rosewater: #f5e0dc;
+  --ctp-flamingo: #f2cdcd;
+  --ctp-pink: #f5c2e7;
+  --ctp-mauve: #cba6f7;
+  --ctp-red: #f38ba8;
+  --ctp-maroon: #eba0ac;
+  --ctp-peach: #fab387;
+  --ctp-yellow: #f9e2af;
+  --ctp-green: #a6e3a1;
+  --ctp-teal: #94e2d5;
+  --ctp-sky: #89dceb;
+  --ctp-sapphire: #74c7ec;
+  --ctp-blue: #89b4fa;
+  --ctp-lavender: #b4befe;
+  --ctp-text: #cdd6f4;
+  --ctp-subtext-1: #bac2de;
+  --ctp-subtext-0: #a6adc8;
+  --ctp-overlay-1: #7f849c;
+  --ctp-overlay-0: #6c7086;
+  --ctp-surface-2: #585b70;
+  --ctp-surface-1: #45475a;
+  --ctp-surface-0: #313244;
+  --ctp-base: #1e1e2e;
+  --ctp-mantle: #181825;
+  --ctp-crust: #11111b;
+  --ctp-link: var(--ctp-blue);
+
+  @include shared;
+}
