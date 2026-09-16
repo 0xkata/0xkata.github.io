@@ -160,6 +160,8 @@ main {
     > a.popup {
       &:not(.normal):not(.left):not(.right) {
         @include mx.align-center;
+
+        justify-content: center;
       }
     }
   }
