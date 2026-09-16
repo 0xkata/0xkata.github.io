@@ -18,7 +18,7 @@ mermaid: true
 Pixiverse is a multiplayer productivity mobile RPG that I've been building since February. You create real life tasks, place your character in shared spaces, start a timer, and you get XP that levels up your RPG stats. It runs on a stack consisting of Godot on the frontend, TypeScript Nakama on the backend, and connecting PostgreSQL. This devlog is about what actually happens when you finish a task, and the frustrating bugs that made me understand why it has to be built this way.
 
 ![A character doing push ups](/assets/img/pixiverse/lockin.gif)
-_Lock in: a push up session running in Pixiverse_
+_LOCK IN!!!_
 
 ### Why I Built It
 
